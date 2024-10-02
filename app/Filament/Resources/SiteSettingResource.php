@@ -30,7 +30,7 @@ class SiteSettingResource extends Resource
                 ->options([
                     'hoạt động' => 'Hoạt động',
                     'bảo trì' => 'Bảo trì',
-                    'cập nhật' => 'Cập nhật',
+                    
                 ])
                 ->required(),
         ]);
