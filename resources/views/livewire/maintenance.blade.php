@@ -1,109 +1,91 @@
-<div>
-    <!doctype html>
-<html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="lg" data-sidebar-image="none" data-preloader="disable" data-theme="default" data-theme-colors="default">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
-    <meta charset="utf-8" />
-    <title>Bảo trì</title>
-    <meta name="description" content="MẠNG XÃ HỘI CỦA NGƯỜI VIỆT">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="Themesbrand" name="author" />
-    <!-- App favicon -->
-    <link rel="shortcut icon" href="/assets_maintenance/images/favicon.ico">
+    <meta name="description" content="We apologize, the website is currently undergoing maintenance">
+    <title>503 - Maintenance</title>
+    <style>
+        @import url('//fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
 
-    <!-- Layout config Js -->
-    <script src="/assets_maintenance/js/layout.js"></script>
-    <!-- Bootstrap Css -->
-    <link href="/assets_maintenance/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- Icons Css -->
-    <link href="/assets_maintenance/css/icons.min.css" rel="stylesheet" type="text/css" />
-    <!-- App Css-->
-    <link href="/assets_maintenance/css/app.min.css" rel="stylesheet" type="text/css" />
-    <!-- custom Css-->
-    <link href="/assets_maintenance/css/custom.min.css" rel="stylesheet" type="text/css" />
+        body {
+            font-family: 'Kanit', sans-serif;
+            color: #333;
+            text-align: center
+        }
 
+        .page_503 {
+            background: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%
+        }
+
+        .four_zero_four_bg {
+            background-image: url('/503.gif');
+            height: 350px;
+            background-position: center
+        }
+
+        .four_zero_four_bg h1 {
+            font-size: 80px;
+            margin-top: 0px;
+            color: #95684a
+        }
+
+        .contant_box_503 p {
+            font-size: 25px
+        }
+
+        .link_503 {
+            color: #fff;
+            background: #39ac31;
+            padding: 10px 20px;
+            margin: 20px 0;
+            display: inline-block;
+            text-decoration: none
+        }
+
+        .link_503:hover {
+            color: #fff;
+            background: #333
+        }
+    </style>
 </head>
 
 <body>
-
-    <div class="auth-page-wrapper pt-5">
-        <!-- auth page bg -->
-        <div class="auth-one-bg-position auth-one-bg" id="auth-particles">
-            <div class="bg-overlay"></div>
-
-            <div class="shape">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1440 120">
-                    <path d="M 0,36 C 144,53.6 432,123.2 720,124 C 1008,124.8 1296,56.8 1440,40L1440 140L0 140z"></path>
-                </svg>
-            </div>
-        </div>
-
-        <!-- auth page content -->
-        <div class="auth-page-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center mt-sm-5 pt-4">
-                            <div class="mb-5 text-white-50">
-                                <h1 class="display-5 coming-soon-text">WEBSITE ĐANG BẢO TRÌ</h1>
-                                <p class="fs-14">Vui lòng quay lại sau</p>
-                                <div class="mt-4 pt-2">
-                                    <a href="/" class="btn btn-success"><i class="mdi mdi-home me-1"></i> Back to Home</a>
-                                </div>
-                            </div>
-                            <div class="row justify-content-center mb-5">
-                                <div class="col-xl-4 col-lg-8">
-                                    <div>
-                                        <img src="/assets_maintenance/images/maintenance.png" alt="" class="img-fluid">
-                                    </div>
-                                </div>
-                            </div>
+    <section class="page_503">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="col-sm-10 col-sm-offset-1 text-center">
+                        <div class="four_zero_four_bg">
+                            <h1 class="text-center">503</h1>
                         </div>
-                    </div>
-                </div>
-                <!-- end row -->
-
-            </div>
-            <!-- end container -->
-        </div>
-        <!-- end auth page content -->
-
-        <!-- footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-center">
-                            <p class="mb-0 text-muted">&copy;
-                                <script>
-                                    document.write(new Date().getFullYear())
-                                </script> . Crafted with <i class="mdi mdi-heart text-danger"></i> by OCCO
+                        <div class="contant_box_503">
+                            <h2 class="h2">MAINTENANCE MODE</h2>
+                            <p>We apologize, the website is currently undergoing maintenance. Please wait for a moment!
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- end Footer -->
-
-    </div>
-    <!-- end auth-page-wrapper -->
-
-    <!-- JAVASCRIPT -->
-    <script src="/assets_maintenance/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets_maintenance/libs/simplebar/simplebar.min.js"></script>
-    <script src="/assets_maintenance/libs/node-waves/waves.min.js"></script>
-    <script src="/assets_maintenance/libs/feather-icons/feather.min.js"></script>
-    <script src="/assets_maintenance/js/pages/plugins/lord-icon-2.1.0.js"></script>
-    <script src="/assets_maintenance/js/plugins.js"></script>
-
-    <!-- particles js -->
-    <script src="/assets_maintenance/libs/particles.js/particles.js"></script>
-    <!-- particles app js -->
-    <script src="/assets_maintenance/js/pages/particles.app.js"></script>
-
+        </div>
+    </section>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"8cc4d89be8df40fc","version":"2024.8.0","r":1,"token":"c65579a9ff5e4195b2c71eeb6fd1529f","serverTiming":{"name":{"cfExtPri":true,"cfL4":true}}}'
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
-</div>
