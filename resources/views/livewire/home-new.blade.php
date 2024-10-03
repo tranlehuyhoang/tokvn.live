@@ -599,55 +599,7 @@
                 </div>
             </div>
         </div>
-        @if ($isMaintenanceMode)
-        <!-- Modal HTML -->
-        <div id="myModal" class="modal" style="display: flex;justify-content: center;align-items: center;">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-                <a class="close" id="coloess"  href='/home' >&times;</a>
-
-                <h2>{{ $title }}</h2> <!-- Hiển thị tiêu đề -->
-                <img src="/503.gif" alt="Maintenance Image">
-                <p>{!! $content !!}</p> <!-- Hiển thị nội dung -->
-                <p><strong>Thời gian bảo trì:</strong> <span id="countdown"></span></p>
-            </div>
-            <script>
-                // Lấy thời gian bảo trì từ backend
-                const maintenanceTime = @json($maintenanceTime);
-                const countdownElement = document.getElementById('countdown');
-    
-                // Nếu có thời gian bảo trì
-                if (maintenanceTime) {
-                    const endTime = new Date(maintenanceTime).getTime();
-                    
-                    const countdown = setInterval(() => {
-                        const now = new Date().getTime();
-                        const timeLeft = endTime - now;
-    
-                        // Tính toán thời gian còn lại
-                        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-                        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-                        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-    
-                        // Cập nhật giao diện
-                        countdownElement.innerHTML = days + " ngày " + hours + " giờ "
-                            + minutes + " phút " + seconds + " giây ";
-    
-                        // Nếu thời gian đã hết, dừng đếm ngược
-                        if (timeLeft < 0) {
-                            clearInterval(countdown);
-                            countdownElement.innerHTML = "Thời gian bảo trì đã kết thúc!";
-                        }
-                    }, 1000);
-                } else {
-                    countdownElement.innerHTML = "Không xác định";
-                }
-            </script>
-       
-        </div>
-        @endif
+   
         <style>
             /* Style for the modal container */
             .modal {
