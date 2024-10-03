@@ -24,16 +24,39 @@ class SiteSettingResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-        ->schema([
-            Forms\Components\Select::make('status')
-                ->label('Trạng thái')
-                ->options([
-                    'hoạt động' => 'Hoạt động',
-                    'bảo trì' => 'Bảo trì',
-                    
-                ])
-                ->required(),
-        ]);
+            ->schema([
+                Forms\Components\Section::make('Thông tin trạng thái')
+                    ->schema([
+                        Forms\Components\Select::make('status')
+                            ->label('Trạng thái')
+                            ->options([
+                                'hoạt động' => 'Hoạt động',
+                                'bảo trì' => 'Bảo trì',
+                            ])
+                            ->required(),
+                    ]),
+    
+                Forms\Components\Section::make('Thông tin bảo trì')
+                    ->schema([
+                        // Thêm trường tiêu đề
+                        Forms\Components\TextInput::make('title')
+                            ->label('Tiêu đề')
+                            ->placeholder('Nhập tiêu đề thông báo bảo trì')
+                            ->required()
+                            ->maxLength(255), // Giới hạn độ dài tối đa của tiêu đề
+    
+                        // Thêm trường nội dung
+                        Forms\Components\RichEditor::make('content')
+                            ->label('Nội dung')
+                            ->placeholder('Nhập nội dung thông báo bảo trì')
+                            ->required(),
+    
+                        // Thêm trường thời gian bảo trì
+                        Forms\Components\DateTimePicker::make('maintenance_time')
+                            ->label('Thời gian bảo trì')
+                            ->required(),
+                    ]),
+            ]);
     }
 
     public static function table(Table $table): Table

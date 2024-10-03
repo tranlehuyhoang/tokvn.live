@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3309
--- Generation Time: Oct 02, 2024 at 01:00 PM
+-- Generation Time: Oct 03, 2024 at 03:58 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -38,8 +38,8 @@ CREATE TABLE `cache` (
 --
 
 INSERT INTO `cache` (`key`, `value`, `expiration`) VALUES
-('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1727866485),
-('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1727866485;', 1727866485);
+('a17961fa74e9275d529f489537f179c05d50c2f3', 'i:1;', 1727918067),
+('a17961fa74e9275d529f489537f179c05d50c2f3:timer', 'i:1727918067;', 1727918067);
 
 -- --------------------------------------------------------
 
@@ -124,7 +124,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '0001_01_01_000000_create_users_table', 1),
 (2, '0001_01_01_000001_create_cache_table', 1),
 (3, '0001_01_01_000002_create_jobs_table', 1),
-(4, '2024_10_02_105533_create_site_settings_table', 2);
+(4, '2024_10_02_105533_create_site_settings_table', 2),
+(5, '2024_10_03_013713_add_title_content_and_time_to_site_settings_table', 3);
 
 -- --------------------------------------------------------
 
@@ -158,7 +159,8 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('1Mt4xSXjoxf7XUtkNpItuMCfBOHeFhcuaN46VJg6', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiMTJxbEJKT0d5WWRPQVo4RXRMMGlrd3paY01ScEZWRmRqbWp1eW05dyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9zaXRlLXNldHRpbmdzIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czozOiJ1cmwiO2E6MDp7fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMiQuT0V4eFRKNWY3Rk1UZ3NOcFloZ1llQVNoMXo0ekRHQmJVZ0M3d285cy9QcVRHUUxoZE5ScSI7czo4OiJmaWxhbWVudCI7YTowOnt9fQ==', 1727866784),
+('1Mt4xSXjoxf7XUtkNpItuMCfBOHeFhcuaN46VJg6', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiMTJxbEJKT0d5WWRPQVo4RXRMMGlrd3paY01ScEZWRmRqbWp1eW05dyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9tYWludGVuYW5jZSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkLk9FeHhUSjVmN0ZNVGdzTnBZaGdZZUFTaDF6NHpER0JiVWdDN3dvOXMvUHFUR1FMaGROUnEiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1727875033),
+('3xLzLg4g4GGaOXmVI41WwVt8ENwIoaDqjPSV3yHi', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiT0lPQmM4UGpEWnFucU5QYkV6QWQ3bGZjSEZLaHJlbTRzdXBDblBwMyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6MzoidXJsIjthOjA6e31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTIkLk9FeHhUSjVmN0ZNVGdzTnBZaGdZZUFTaDF6NHpER0JiVWdDN3dvOXMvUHFUR1FMaGROUnEiO3M6ODoiZmlsYW1lbnQiO2E6MDp7fX0=', 1727920673),
 ('mhSDI8ToQbcm5oO1S30QDA2Dk0l7rwydYRSmw10L', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiUUgzdGZNTktnTHUwbWZyUHdCMHZGY3BPd3RVd0xtZTJIRVpzdUdUZCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hYm91dCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1727865551),
 ('WZLXEZAxAEp5UvShduxSHS8oUzQ44EZlZp2g54zY', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiNzRFck9FV1JHNHNQRlZKVGhCaVRKQzlNWlJ5QUUyaDN4NHdBTE1JMSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjk6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC91cGdyYWRlIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==', 1727865668),
 ('Xl0qWDh1GS9YzZUJzr0C0FgTDGPAcUkjGOFZvTGN', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 OPR/113.0.0.0', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiMHBQQUFGcUMyRWdGMDVheUxoalp2bHFndkFOdGJkTWRuQkF6MG91byI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly8xMjcuMC4wLjE6ODAwMCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1727865444);
@@ -173,15 +175,18 @@ CREATE TABLE `site_settings` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `status` varchar(255) NOT NULL DEFAULT 'hoạt động',
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `content` text DEFAULT NULL,
+  `maintenance_time` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `site_settings`
 --
 
-INSERT INTO `site_settings` (`id`, `status`, `created_at`, `updated_at`) VALUES
-(1, 'hoạt động', '2024-10-02 03:57:37', '2024-10-02 03:57:37');
+INSERT INTO `site_settings` (`id`, `status`, `created_at`, `updated_at`, `title`, `content`, `maintenance_time`) VALUES
+(1, 'bảo trì', '2024-10-02 03:57:37', '2024-10-02 18:44:53', 'Thông báo bảo trì', '<p>&nbsp;Website hiện đang trong chế độ bảo trì. Xin vui lòng quay lại sau!&nbsp;</p>', '2024-10-03 01:44:19');
 
 -- --------------------------------------------------------
 
@@ -296,7 +301,7 @@ ALTER TABLE `jobs`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `site_settings`
