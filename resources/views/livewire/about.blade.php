@@ -138,7 +138,7 @@
                 <div class="grid grid-cols-3 gap-2 max-sm:hidden">
                     <div class="flex justify-center px-5">
                         <div class="flex justify-center w-[400px]  h-full min-h-[400px] lg:min-h-[500px]   py-10 flex-col gap-y-5 rounded-2xl" style="background-image:linear-gradient(to bottom, #10674b 0%, #169775 100%)">
-                            <div class="flex justify-center"><img alt="" loading="lazy" width="241" height="241" decoding="async" data-nimg="1" class="max-[1220px]:w-[150px] max-[900px]:w-[100px] duration-100" style="color:transparent" srcset="/assets_occo/partner4.webp" src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpartner4.4daf5efc.png&w=640&q=75"
+                            <div class="flex justify-center"><img alt="" loading="lazy" width="241" height="241" decoding="async" data-nimg="1" class="max-[1220px]:w-[150px] max-[900px]:w-[100px] duration-100" style="color:transparent" srcset="/assets_occo/partner4.webp" src="/assets_occo/partner4.webp"
                                 />
                                 <div class="hidden">0
                                     <!-- -->
@@ -183,7 +183,7 @@
                             <div style="align-content:space-around" class="w-full flex justify-center">
                                 <div class="flex justify-center w-[310px] h-[353px]    flex-col gap-y-5 rounded-2xl carousel-item mx-2" style="background-image:linear-gradient(to bottom, rgb(24 0 41) 0%, #2A0146 100%)">
                                     <div class="w-full flex justify-center">
-                                        <div class="flex justify-center w-[136px] h-[136px]"><img alt="" loading="lazy" width="964" height="964" decoding="async" data-nimg="1" class="w-full" style="color:transparent" srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpartner.4daf5efc.png&w=1080&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpartner.4daf5efc.png&w=2048&q=75 2x"
+                                        <div class="flex justify-center w-[136px] h-[136px]"><img alt="" loading="lazy" width="964" height="964" decoding="async" data-nimg="1" class="w-full" style="color:transparent" srcset="/assets_occo/partner4.webp"
                                                 src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpartner.4daf5efc.png&w=2048&q=75" />
                                             <div class="hidden">0
                                                 <!-- -->
@@ -249,7 +249,7 @@
             </div>
             <div class="  flex gap-2    lg:justify-between flex max-[500px]:px-5 min-[500px]:px-[80px]  ">
                 <div class=" bg-customBlack border-b border-b-customGrey flex items-center  "><input placeholder="Email của bạn" class="border-0 bg-customBlack w-full max-sm:max-w-[280px] focus:outline-none  max-[1024px]:w-[500px] " /></div><img alt="" loading="lazy" width="34" height="34" decoding="async" data-nimg="1" class=""
-                    style="color:transparent" srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=48&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=75 2x" src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=75"
+                    style="color:transparent" srcset="/assets_occo/email.webp" src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=75"
                 /></div>
         </div>
         <div class="max-h-[650px]">
@@ -263,12 +263,12 @@
                             <div> chia sẻ, giải trí</div>
                         </div>
                         <div class="py-5 flex flex-row gap-5">
-                            <div class=""><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fqr1.e2a4efa8.png&w=96&q=75 1x, /_next/image/qr1.webp 2x"
-                                    src="/assets_occo/_next/image/qr1.webp" />
+                            <div class=""><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp"
+                                    src="/assets_occo/qr1.webp" />
                                 <div class="pt-3">App Store</div>
                             </div>
-                            <div><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fqr1.e2a4efa8.png&w=96&q=75 1x, /_next/image/qr1.webp 2x"
-                                    src="/assets_occo/_next/image/qr1.webp" />
+                            <div><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp"
+                                    src="/assets_occo/qr1.webp" />
                                 <div class="pt-3">Google Play</div>
                             </div>
                         </div>
@@ -297,7 +297,7 @@
                         <div class="py-3 max-sm:w-[320px] max-sm:h-[48px] text-sm " style="color:#F8C17A">Nhận tin mới hoặc liên hệ hợp tác, hãy đăng ký email tại đây chúng tôi sẽ nhanh chóng phản hồi</div>
                         <div class="  flex gap-5 py-3 max-sm:justify-between  overflow-hidden">
                             <div class=" bg-customBlack border-b border-b-customGrey flex items-center lg:w-[80%] z-0  "><input placeholder="Email của bạn" class="border-0 bg-customBlack max-sm:w-[270px] focus:outline-none" /></div><img alt="" loading="lazy" width="34" height="34" decoding="async" data-nimg="1" class="relative left-[3%]" style="color:transparent"
-                                srcset="/assets_occo/email.webp" src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=100" /></div>
+                                srcset="/assets_occo/email.webp" src="/assets_occo/email.webp" /></div>
                     </div>
                 </div>
                 <div class="col-span-2 row-span-2  ">
@@ -308,10 +308,10 @@
                                     <div>Tải xuống ứng dụng để kết bạn, tương tác, chia sẻ, giải trí</div>
                                 </div>
                                 <div class="py-5 flex flex-row gap-7   max-[800px]:gap-3">
-                                    <div class=""><img alt="" loading="lazy" width="109" height="109" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp" src="/assets_occo/_next/image/qr1.webp" />
+                                    <div class=""><img alt="" loading="lazy" width="109" height="109" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp" src="/assets_occo/qr1.webp" />
                                         <div class="pt-3 w-full text-center text-[18px]  max-[1493px]:text-[16px] max-[1075px]:text-[8px] max-[1360px]:text-[10px]">App Store</div>
                                     </div>
-                                    <div><img alt="" loading="lazy" width="109" height="109" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp" src="/assets_occo/_next/image/qr1.webp" />
+                                    <div><img alt="" loading="lazy" width="109" height="109" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp" src="/assets_occo/qr1.webp" />
                                         <div class="pt-3 w-full text-center text-[18px]  max-[1493px]:text-[16px]  max-[1075px]:text-[8px] max-[1360px]:text-[10px]">Google Play</div>
                                     </div>
                                 </div>

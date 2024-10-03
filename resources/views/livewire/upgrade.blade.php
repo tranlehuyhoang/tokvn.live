@@ -231,7 +231,7 @@
             </div>
             <div class="  flex gap-2    lg:justify-between flex max-[500px]:px-5 min-[500px]:px-[80px]  ">
                 <div class=" bg-customBlack border-b border-b-customGrey flex items-center  "><input placeholder="Email của bạn" class="border-0 bg-customBlack w-full max-sm:max-w-[280px] focus:outline-none  max-[1024px]:w-[500px] " /></div><img alt="" loading="lazy" width="34" height="34" decoding="async" data-nimg="1" class=""
-                    style="color:transparent" srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=48&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=75 2x" src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=75"
+                    style="color:transparent" srcset="/assets_occo/email.webp" src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=75"
                 /></div>
         </div>
         <div class="max-h-[650px]">
@@ -245,12 +245,12 @@
                             <div> chia sẻ, giải trí</div>
                         </div>
                         <div class="py-5 flex flex-row gap-5">
-                            <div class=""><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fqr1.e2a4efa8.png&w=96&q=75 1x, /_next/image/qr1.webp 2x"
-                                    src="/assets_occo/_next/image/qr1.webp" />
+                            <div class=""><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp"
+                                    src="/assets_occo/qr1.webp" />
                                 <div class="pt-3">App Store</div>
                             </div>
-                            <div><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fqr1.e2a4efa8.png&w=96&q=75 1x, /_next/image/qr1.webp 2x"
-                                    src="/assets_occo/_next/image/qr1.webp" />
+                            <div><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp"
+                                    src="/assets_occo/qr1.webp" />
                                 <div class="pt-3">Google Play</div>
                             </div>
                         </div>
@@ -279,7 +279,7 @@
                         <div class="py-3 max-sm:w-[320px] max-sm:h-[48px] text-sm " style="color:#F8C17A">Nhận tin mới hoặc liên hệ hợp tác, hãy đăng ký email tại đây chúng tôi sẽ nhanh chóng phản hồi</div>
                         <div class="  flex gap-5 py-3 max-sm:justify-between  overflow-hidden">
                             <div class=" bg-customBlack border-b border-b-customGrey flex items-center lg:w-[80%] z-0  "><input placeholder="Email của bạn" class="border-0 bg-customBlack max-sm:w-[270px] focus:outline-none" /></div><img alt="" loading="lazy" width="34" height="34" decoding="async" data-nimg="1" class="relative left-[3%]" style="color:transparent"
-                                srcset="/assets_occo/email.webp" src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=100" /></div>
+                                srcset="/assets_occo/email.webp" src="/assets_occo/email.webp" /></div>
                     </div>
                 </div>
                 <div class="col-span-2 row-span-2  ">
@@ -290,10 +290,10 @@
                                     <div>Tải xuống ứng dụng để kết bạn, tương tác, chia sẻ, giải trí</div>
                                 </div>
                                 <div class="py-5 flex flex-row gap-7   max-[800px]:gap-3">
-                                    <div class=""><img alt="" loading="lazy" width="109" height="109" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp" src="/assets_occo/_next/image/qr1.webp" />
+                                    <div class=""><img alt="" loading="lazy" width="109" height="109" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp" src="/assets_occo/qr1.webp" />
                                         <div class="pt-3 w-full text-center text-[18px]  max-[1493px]:text-[16px] max-[1075px]:text-[8px] max-[1360px]:text-[10px]">App Store</div>
                                     </div>
-                                    <div><img alt="" loading="lazy" width="109" height="109" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp" src="/assets_occo/_next/image/qr1.webp" />
+                                    <div><img alt="" loading="lazy" width="109" height="109" decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp" src="/assets_occo/qr1.webp" />
                                         <div class="pt-3 w-full text-center text-[18px]  max-[1493px]:text-[16px]  max-[1075px]:text-[8px] max-[1360px]:text-[10px]">Google Play</div>
                                     </div>
                                 </div>

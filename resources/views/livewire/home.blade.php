@@ -257,8 +257,8 @@
             <div class="     h-full flex items-center justify-center    h-full w-full"><img alt="" loading="lazy"
                     width="1564" height="1564" decoding="async" data-nimg="1" class="w-full h-full"
                     style="color:transparent"
-                    srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhinh1.bb707a1f.png&w=1920&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhinh1.bb707a1f.png&w=3840&q=75 2x"
-                    src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhinh1.bb707a1f.png&w=3840&q=75" />
+                    srcset="/assets_occo/hinh1.webp"
+                    src="/assets_occo/hinh1.webp" />
             </div>
         </div>
         <div class="div pt-[30px] md:hidden">
@@ -270,7 +270,7 @@
                                 <div class=" h-[34px] w-[34px] rounded-md bg-green-700 flex items-center justify-center"
                                     style="background-color:#169775"><img alt="" loading="lazy" width="17" height="17"
                                         decoding="async" data-nimg="1" class="max-h-[17px]" style="color:transparent"
-                                        srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser.96a549b8.png&w=32&q=100 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser.96a549b8.png&w=48&q=100 2x"
+                                        srcset="/assets_occo/user.webp"
                                         src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser.96a549b8.png&w=48&q=100" />
                                 </div>
                             </div>
@@ -338,7 +338,7 @@
                         <div class="w-[64px] h-[64px] bg-green-700 rounded-2xl flex items-center justify-center "
                             style="background-color:#007E62"><img alt="" loading="lazy" width="32" height="32"
                                 decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/user.webp"
-                                src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fuser.96a549b8.png&w=64&q=100" />
+                                src="/assets_occo/user.webp" />
                         </div>
                         <div class="py-2 text-xl font-bold flex " style="font-size:26px">Chi tiết profile</div>
                         <div class="w-[306px] text-customGrey leading-[30px]min-[1300px]::text-[30px] sm:text-[20px] max-sm:text-[12px]"
@@ -417,12 +417,12 @@
             <div class="flex justify-center pt-5">
                 <div class="max-sm:hidden max-md:hidden pt-5"><img alt="" loading="lazy" width="440" height="783"
                         decoding="async" data-nimg="1" style="color:transparent" srcset="/assets_occo/Frame.webp"
-                        src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFrame.151fae34.png&w=1080&q=100" />
+                        src="/assets_occo/Frame.webp" />
                 </div>
                 <div class="md:hidden"><img alt="" loading="lazy" width="284" height="160" decoding="async"
                         data-nimg="1" style="color:transparent"
-                        srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFrame.151fae34.png&w=384&q=100 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFrame.151fae34.png&w=640&q=100 2x"
-                        src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFrame.151fae34.png&w=640&q=100" />
+                        srcset="/assets_occo/Frame.webp"
+                        src="/assets_occo/Frame.webp" />
                 </div>
             </div>
         </div>
@@ -445,7 +445,7 @@
                             class="border-0 bg-customBlack w-full max-sm:max-w-[280px] focus:outline-none  max-[1024px]:w-[500px] " />
                     </div><img alt="" loading="lazy" width="34" height="34" decoding="async" data-nimg="1" class=""
                         style="color:transparent"
-                        srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=48&q=75 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=75 2x"
+                        srcset="/assets_occo/email.webp"
                         src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=75" />
                 </div>
             </div>
@@ -466,14 +466,14 @@
                             <div class="py-5 flex flex-row gap-5">
                                 <div class=""><img alt="" loading="lazy" width="70" height="70" decoding="async"
                                         data-nimg="1" style="color:transparent"
-                                        srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fqr1.e2a4efa8.png&w=96&q=75 1x, /_next/image/qr1.webp 2x"
-                                        src="/assets_occo/_next/image/qr1.webp" />
+                                        srcset="/assets_occo/qr1.webp"
+                                        src="/assets_occo/qr1.webp" />
                                     <div class="pt-3">App Store</div>
                                 </div>
                                 <div><img alt="" loading="lazy" width="70" height="70" decoding="async" data-nimg="1"
                                         style="color:transparent"
-                                        srcset="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fqr1.e2a4efa8.png&w=96&q=75 1x, /_next/image/qr1.webp 2x"
-                                        src="/assets_occo/_next/image/qr1.webp" />
+                                        srcset="/assets_occo/qr1.webp"
+                                        src="/assets_occo/qr1.webp" />
                                     <div class="pt-3">Google Play</div>
                                 </div>
                             </div>
@@ -525,7 +525,7 @@
                                 </div><img alt="" loading="lazy" width="34" height="34" decoding="async" data-nimg="1"
                                     class="relative left-[3%]" style="color:transparent"
                                     srcset="/assets_occo/email.webp"
-                                    src="/assets_occo/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Femail.536ffdfc.png&w=96&q=100" />
+                                    src="/assets_occo/email.webp" />
                             </div>
                         </div>
                     </div>
@@ -542,14 +542,14 @@
                                         <div class=""><img alt="" loading="lazy" width="109" height="109"
                                                 decoding="async" data-nimg="1" style="color:transparent"
                                                 srcset="/assets_occo/qr1.webp"
-                                                src="/assets_occo/_next/image/qr1.webp" />
+                                                src="/assets_occo/qr1.webp" />
                                             <div
                                                 class="pt-3 w-full text-center text-[18px]  max-[1493px]:text-[16px] max-[1075px]:text-[8px] max-[1360px]:text-[10px]">
                                                 App Store</div>
                                         </div>
                                         <div><img alt="" loading="lazy" width="109" height="109" decoding="async"
                                                 data-nimg="1" style="color:transparent" srcset="/assets_occo/qr1.webp"
-                                                src="/assets_occo/_next/image/qr1.webp" />
+                                                src="/assets_occo/qr1.webp" />
                                             <div
                                                 class="pt-3 w-full text-center text-[18px]  max-[1493px]:text-[16px]  max-[1075px]:text-[8px] max-[1360px]:text-[10px]">
                                                 Google Play</div>
