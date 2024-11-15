@@ -14,7 +14,12 @@
                     <a href="/" wire:navigate><img alt="Brand" loading="lazy" width="2058" height="515" decoding="async"
                             data-nimg="1" class="__className_7a2b7c text-[32px] max-lg:text-[20px]"
                             style="color:transparent" srcset="/assets_occo/brand.webp"
-                            src="/assets_occo/brand.webp"></a>
+                            src="/assets_occo/brand.webp">
+                        <p style="
+                        color: white;
+                        font-size: 8px;
+                        position: absolute;
+                    ">mạng xã hội công nghệ</p></a>
                 </span>
             </div>
             <div class="flex lg:hidden flex-row gap-5 items-center   ">

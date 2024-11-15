@@ -52,7 +52,7 @@
     </head>
 
     <body class="__className_36bd41" style="background-color:#075646;min-height:100vh">
-    @livewire('inc.header')
+        @livewire('inc.header')
         <div class="Toastify"></div>
         <div
             class="  text-white pt-10   min-w-screen flex max-sm:flex-col flex-row lg:justify-center lg:max-w-full justify-center l     overflow-x-scroll no-scrollbar ">
@@ -508,58 +508,60 @@
                 </div>
             </div>
         </div>
+        @php
+                $siteSetting = \App\Models\SiteSetting::first(); // Use the correct namespace
+                @endphp
         @if ($isMaintenanceMode)
         <!-- Modal HTML -->
         <div id="myModal" class="modal" style="display: flex;justify-content: center;align-items: center;">
 
             <!-- Modal content -->
-            <div class="modal-content">
+            <div class="modal-content" style="width: 100vw; max-width: 1000px; @if ($siteSetting->type == 1) background-color: transparent; border: 0; @endif">
                 <a class="close" id="close" href="/home">&times;</a>
-                
+
                 {{-- Retrieve the site setting --}}
-                @php
-                    $siteSetting = \App\Models\SiteSetting::first(); // Use the correct namespace
-                @endphp
-            
+             
+
                 {{-- Display image --}}
-            
-            
+
+
                 {{-- Check if type is 1 to display video --}}
                 @if ($siteSetting->type == 1)
-                    <video controls style="width: 100%;">
-                        <source src="{{ Storage::url($siteSetting->video) }}" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+          
+                <video controls autoplay style="width: 100%;">
+    <source src="{{ Storage::url($siteSetting->video) }}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
                 @else
                 <img src="{{ Storage::url($siteSetting->image) }}" alt="Maintenance Image" style="width: 100%;">
                 <p><strong>Thời gian bảo trì:</strong> <span id="countdown"></span></p>
 
                 @endif
-            
+
             </div>
             <script>
                 // Lấy thời gian bảo trì từ backend
                 const maintenanceTime = @json($maintenanceTime);
                 const countdownElement = document.getElementById('countdown');
-    
+
                 // Nếu có thời gian bảo trì
                 if (maintenanceTime) {
                     const endTime = new Date(maintenanceTime).getTime();
-                    
+
                     const countdown = setInterval(() => {
                         const now = new Date().getTime();
                         const timeLeft = endTime - now;
-    
+
                         // Tính toán thời gian còn lại
                         const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
                         const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                         const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
                         const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-    
+
                         // Cập nhật giao diện
-                        countdownElement.innerHTML = days + " ngày " + hours + " giờ "
-                            + minutes + " phút " + seconds + " giây ";
-    
+                        countdownElement.innerHTML = days + " ngày " + hours + " giờ " +
+                            minutes + " phút " + seconds + " giây ";
+
                         // Nếu thời gian đã hết, dừng đếm ngược
                         if (timeLeft < 0) {
                             clearInterval(countdown);
@@ -570,7 +572,7 @@
                     countdownElement.innerHTML = "Không xác định";
                 }
             </script>
-       
+
         </div>
         @endif
         <style>
@@ -628,7 +630,7 @@
         <script src="/assets_occo/_next/static/chunks/webpack-db692e27de9f7971.js" crossorigin="" async=""></script>
         <script>
             (self.__next_f = self.__next_f || []).push([0]);
-        self.__next_f.push([2, null])
+            self.__next_f.push([2, null])
         </script>
         <script>
             self.__next_f.push([1, "1:HL[\"/_next/static/media/a34f9d1faa5f3315-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/media/e169c8d0e6ccb939-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:HL[\"/_next/static/css/66721596d9d6088d.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L4\"\n"])
@@ -654,7 +656,7 @@
         <script>
             self.__next_f.push([1, "d:null\n"])
         </script>
-        
+
     </body>
 
     </html>
