@@ -19,6 +19,9 @@ class SiteSetting extends Model
         'privacy_policy_content',// Thêm trường nội dung chính sách bảo mật
         'terms_image',           // Thêm trường ảnh điều khoản dịch vụ
         'terms_content',         // Thêm trường nội dung điều khoản dịch vụ
-        'enable_upgrade'         // Thêm trường bật/tắt nâng cấp
+        'enable_upgrade',         // Thêm trường bật/tắt nâng cấp
+        'type' ,        // Thêm trường bật/tắt nâng cấp
+        'video'  ,       // Thêm trường bật/tắt nâng cấp
+        'image' ,        // Thêm trường bật/tắt nâng cấp
     ];
 }

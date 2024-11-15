@@ -25,77 +25,97 @@ class SiteSettingResource extends Resource
     {
         return $form
             ->schema([
-                // Section 1: Thông tin trạng thái (Collapsible)
-                Forms\Components\Section::make('Thông tin trạng thái')
-                    ->schema([
-                        Forms\Components\Select::make('status')
-                            ->label('Trạng thái')
-                            ->options([
-                                'hoạt động' => 'Hoạt động',
-                                'bảo trì' => 'Bảo trì',
-                            ])
-                            ->required(),
+                Forms\Components\Tabs::make('form_tabs')
+                    ->tabs([
+                        // Tab 1: Thông tin trạng thái
+                        Forms\Components\Tabs\Tab::make('Thông tin trạng thái')
+                            ->schema([
+                                Forms\Components\Select::make('status')
+                                    ->label('Trạng thái')
+                                    ->options([
+                                        'hoạt động' => 'Hoạt động',
+                                        'bảo trì' => 'Bảo trì',
+                                    ])
+                                    ->required(),
+                                Forms\Components\Toggle::make('enable_upgrade')
+                                    ->label('Bật/Tắt nâng cấp')
+                                    ->inline(false),
+                            ]),
+    
+                        // Tab 2: Thông tin bảo trì
+                        Forms\Components\Tabs\Tab::make('Thông tin bảo trì')
+                            ->schema([
+                                Forms\Components\Grid::make(2) // Chia thành 2 cột
+                                    ->schema([
+                                        Forms\Components\TextInput::make('title')
+                                            ->label('Tiêu đề')
+                                            ->placeholder('Nhập tiêu đề thông báo bảo trì')
+                                            ->required()
+                                            ->maxLength(255),
+    
+                                        Forms\Components\DateTimePicker::make('maintenance_time')
+                                            ->label('Thời gian bảo trì')
+                                            ->required(),
+    
+                                        Forms\Components\RichEditor::make('content')
+                                            ->label('Nội dung')
+                                            ->placeholder('Nhập nội dung thông báo bảo trì')
+                                            ->required(),
+    
+                                        Forms\Components\FileUpload::make('image')
+                                            ->label('Ảnh')
+                                            ->placeholder('Ảnh'),
+    
+                                        Forms\Components\FileUpload::make('video')
+                                            ->label('Video')
+                                            ->placeholder('Video'),
+    
+                                        Forms\Components\Toggle::make('type')
+                                            ->label('Ảnh/Video')
+                                            ->inline(false),
+                                    ]),
+                            ]),
+    
+                        // Tab 3: Giới thiệu và Chính sách bảo mật
+                        Forms\Components\Tabs\Tab::make('Giới thiệu Occo')
+                            ->schema([
+                                        Forms\Components\RichEditor::make('about')
+                                            ->label('Giới thiệu')
+                                            ->placeholder('Nhập nội dung giới thiệu về trang web')
+                                            ->required(),
+    
+                                
+                            ]),
+                        Forms\Components\Tabs\Tab::make('Chính sách bảo mật')
+                            ->schema([
+                                 
+    
+                                        Forms\Components\FileUpload::make('privacy_policy_image')
+                                            ->label('Ảnh chính sách bảo mật')
+                                            ->image()
+                                            ->directory('privacy-policy-images'),
+    
+                                        Forms\Components\RichEditor::make('privacy_policy_content')
+                                            ->label('Nội dung chính sách bảo mật')
+                                            ->placeholder('Nhập nội dung chính sách bảo mật')
+                                            ->required(),
+                            ]),
+    
+                        // Tab 4: Điều khoản dịch vụ và Nâng cấp
+                        Forms\Components\Tabs\Tab::make('Thỏa thuận dịch vụ ')
+                            ->schema([
+                                        Forms\Components\FileUpload::make('terms_image')
+                                            ->label('Ảnh điều khoản dịch vụ')
+                                            ->image()
+                                            ->directory('terms-images'),
+    
+                                        Forms\Components\RichEditor::make('terms_content')
+                                            ->label('Nội dung điều khoản dịch vụ')
+                                            ->placeholder('Nhập nội dung điều khoản dịch vụ')
+                                            ->required(),
+                            ]),
                     ])
-                    ->collapsible(), // Section có thể đóng mở
-        
-                // Section 2: Thông tin bảo trì (Collapsible)
-                Forms\Components\Section::make('Thông tin bảo trì')
-                    ->schema([
-                        Forms\Components\TextInput::make('title')
-                            ->label('Tiêu đề')
-                            ->placeholder('Nhập tiêu đề thông báo bảo trì')
-                            ->required()
-                            ->maxLength(255),
-    
-                        Forms\Components\RichEditor::make('content')
-                            ->label('Nội dung')
-                            ->placeholder('Nhập nội dung thông báo bảo trì')
-                            ->required(),
-    
-                        Forms\Components\DateTimePicker::make('maintenance_time')
-                            ->label('Thời gian bảo trì')
-                            ->required(),
-                    ])
-                    ->collapsible(), // Section có thể đóng mở
-        
-                // Section 3: Giới thiệu và Chính sách bảo mật (Collapsible)
-                Forms\Components\Section::make('Giới thiệu & Chính sách bảo mật')
-                    ->schema([
-                        Forms\Components\RichEditor::make('about')
-                            ->label('Giới thiệu')
-                            ->placeholder('Nhập nội dung giới thiệu về trang web')
-                            ->required(),
-    
-                        Forms\Components\FileUpload::make('privacy_policy_image')
-                            ->label('Ảnh chính sách bảo mật')
-                            ->image()
-                            ->directory('privacy-policy-images'),
-    
-                        Forms\Components\RichEditor::make('privacy_policy_content')
-                            ->label('Nội dung chính sách bảo mật')
-                            ->placeholder('Nhập nội dung chính sách bảo mật')
-                            ->required(),
-                    ])
-                    ->collapsible(), // Section có thể đóng mở
-        
-                // Section 4: Điều khoản dịch vụ và Nâng cấp (Collapsible)
-                Forms\Components\Section::make('Điều khoản & Nâng cấp')
-                    ->schema([
-                        Forms\Components\FileUpload::make('terms_image')
-                            ->label('Ảnh điều khoản dịch vụ')
-                            ->image()
-                            ->directory('terms-images'),
-    
-                        Forms\Components\RichEditor::make('terms_content')
-                            ->label('Nội dung điều khoản dịch vụ')
-                            ->placeholder('Nhập nội dung điều khoản dịch vụ')
-                            ->required(),
-    
-                        Forms\Components\Toggle::make('enable_upgrade')
-                            ->label('Bật/Tắt nâng cấp')
-                            ->inline(false),
-                    ])
-                    ->collapsible(), // Section có thể đóng mở
+                    ->columnSpan(2),
             ]);
     }
     

@@ -59,6 +59,9 @@ class AdminPanelProvider extends PanelProvider
             )
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->brandLogo('/assets_occo/avt1%20(1).webp')
+            ->brandName('OCCO.VN')
+            ;
     }
 }
