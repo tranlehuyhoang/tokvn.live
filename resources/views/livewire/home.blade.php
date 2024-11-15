@@ -514,12 +514,28 @@
 
             <!-- Modal content -->
             <div class="modal-content">
-                <a class="close" id="coloess"  href='/home' >&times;</a>
-
-                <h2>{{ $title }}</h2> <!-- Hiển thị tiêu đề -->
-                <img src="/503.gif" alt="Maintenance Image">
-                <p>{!! $content !!}</p> <!-- Hiển thị nội dung -->
+                <a class="close" id="close" href="/home">&times;</a>
+                
+                {{-- Retrieve the site setting --}}
+                @php
+                    $siteSetting = \App\Models\SiteSetting::first(); // Use the correct namespace
+                @endphp
+            
+                {{-- Display image --}}
+            
+            
+                {{-- Check if type is 1 to display video --}}
+                @if ($siteSetting->type == 1)
+                    <video controls style="width: 100%;">
+                        <source src="{{ Storage::url($siteSetting->video) }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                @else
+                <img src="{{ Storage::url($siteSetting->image) }}" alt="Maintenance Image" style="width: 100%;">
                 <p><strong>Thời gian bảo trì:</strong> <span id="countdown"></span></p>
+
+                @endif
+            
             </div>
             <script>
                 // Lấy thời gian bảo trì từ backend
